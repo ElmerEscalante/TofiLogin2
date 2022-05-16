@@ -65,7 +65,7 @@
             android:backgroundTint="@color/MoradoClaro"
             android:text="Cambiar perfil"
             android:textColor="#000000"
-            app:cornerRadius="20dp"/>
+            app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/ayuda"
@@ -80,7 +80,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnRegistrar"
+        android:id="@+id/btncerrarSesion"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
@@ -90,6 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

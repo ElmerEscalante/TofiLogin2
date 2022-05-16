@@ -48,7 +48,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnCarlos"
+        android:id="@+id/btnPerfil1"
         android:layout_width="163dp"
         android:layout_height="225dp"
         android:background="@drawable/avatar1"
@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.219" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnPerfil2"
         android:layout_width="166dp"
         android:layout_height="227dp"
         android:background="@drawable/avatar2"
@@ -72,7 +72,7 @@
         app:layout_constraintVertical_bias="0.22" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnPerfil3"
         android:layout_width="165dp"
         android:layout_height="227dp"
         android:background="@drawable/avatar3"
@@ -84,7 +84,7 @@
         app:layout_constraintVertical_bias="0.722" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnPerfil4"
         android:layout_width="163dp"
         android:layout_height="226dp"
         android:background="@drawable/avatar4"

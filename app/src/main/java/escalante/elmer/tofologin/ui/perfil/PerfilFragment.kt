@@ -17,7 +17,7 @@ class PerfilFragment : Fragment() {
 
     private var _binding: FragmentPerfilBinding? = null
 
-    
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
