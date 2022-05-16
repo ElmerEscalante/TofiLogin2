@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389661124009",
+    "project_id": "tofilogin",
+    "storage_bucket": "tofilogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389661124009:android:f8cd67f0c2671bb63cd0b8",
+        "android_client_info": {
+          "package_name": "escalante.elmer.tofologin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389661124009-hlqradpvt7rkklk9o84gqhetdrf00t3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWNd1sYCiu8IJmKMdrn6b5AotFidrJ3cE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389661124009-hlqradpvt7rkklk9o84gqhetdrf00t3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
