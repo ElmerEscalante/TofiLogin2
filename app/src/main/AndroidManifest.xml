@@ -18,11 +18,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".RegistroActivity"
@@ -31,7 +27,11 @@
         <activity
             android:name=".PrincipalActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".RestaurarContraActivity"
@@ -39,6 +39,22 @@
         </activity>
         <activity
             android:name=".NuevaContraActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".PerfilesActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityConfiguracion"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ConfiguracionPerfilActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".PreguntasActivity"
             android:exported="true">
         </activity>
     </application>

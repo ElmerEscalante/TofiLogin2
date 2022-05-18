@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/AzulGrisáceo">
+    android:background="@color/white">
 
     <Button
         android:id="@+id/button"
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button3"
         android:layout_width="181dp"
         android:layout_height="172dp"

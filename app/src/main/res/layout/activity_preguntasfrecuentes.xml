@@ -50,30 +50,30 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="¿Cuantos perfiles puedo crear con TOFI?"
-            android:textColor="#000000"
-            app:cornerRadius="20dp" />
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/pregunta2"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="Olvide mi nombre de usuario"
-            android:textColor="#000000"
-            app:cornerRadius="20dp"/>
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/pregunta3"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="Quiero cambiar el icono de mi perfil"
-            android:textColor="#000000"
-            app:cornerRadius="20dp"/>
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/pregunta4"
@@ -81,10 +81,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="No puedo ver las imagenes de la historia"
-            android:textColor="#000000"
-            app:cornerRadius="20dp"/>
+            android:textColor="@color/black"/>
 
 
     </LinearLayout>

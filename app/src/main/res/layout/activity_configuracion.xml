@@ -7,7 +7,7 @@
     android:background="@color/white">
 
     <ImageButton
-        android:id="@+id/btnReturn3"
+        android:id="@+id/btnRegresarConfiguracion"
         android:layout_width="30dp"
         android:layout_height="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,8 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:srcCompat="@drawable/regresarmorado"
-        app:cornerRadius="20dp"/>
+        app:srcCompat="@drawable/regresarmorado"/>
 
 
     <TextView
@@ -39,43 +38,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="356dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintBottom_toTopOf="@+id/btncerrarSesion"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/editarperfil"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="302dp"
+            android:layout_height="65dp"
             android:layout_marginTop="50dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="Editar perfil"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/cambiarperfil"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="305dp"
+            android:layout_height="64dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="Cambiar perfil"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/ayuda"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="305dp"
+            android:layout_height="61dp"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/MoradoClaro"
+            android:background="@drawable/relleno_degradado_lineal"
+            app:backgroundTint="@null"
             android:text="Ayuda"
-            android:textColor="#000000"
-            app:cornerRadius="20dp"/>
+            android:textColor="@color/black"
+            app:cornerRadius="20dp" />
 
     </LinearLayout>
 

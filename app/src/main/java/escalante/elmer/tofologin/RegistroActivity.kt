@@ -49,12 +49,12 @@ class RegistroActivity: AppCompatActivity(){
                             if (task.isSuccessful) {
                                 // Sign in success, update UI with the signed-in user's information
                                 //Log.d(TAG, "createUserWithEmail:success")
-                                Toast.makeText(baseContext, "Correcto", Toast.LENGTH_SHORT).show()
-                                startActivity(Intent(this, LoginActivity::class.java))
+                                Toast.makeText(baseContext, "Registro exitoso", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this, ConfiguracionPerfilActivity::class.java))
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w("RegistroActivity", "createUserWithEmail:failure", task.exception)
-                                Toast.makeText(baseContext, "Authentication failed.",
+                                Toast.makeText(baseContext, "Registro fallido",
                                     Toast.LENGTH_SHORT).show()
                                 //updateUI(null)
                             }

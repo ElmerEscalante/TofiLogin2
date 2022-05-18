@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/MoradoDegradadoRadial">
+    android:background="@drawable/morado_degradado_radial">
 
     <ImageView
         android:id="@+id/img_regresar_nuevacontra"
@@ -45,9 +45,8 @@
         android:backgroundTint="#E0E6E8"
         android:backgroundTintMode="add"
         android:hint="@string/prompt_password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        android:text="Repetir contraseña"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,10 +64,9 @@
         android:background="@android:drawable/editbox_background"
         android:backgroundTint="#E0E6E8"
         android:backgroundTintMode="add"
-        android:hint="@string/prompt_password"
-        android:inputType="textPersonName"
+        android:hint="@string/nuevaContrasena"
+        android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        android:text="Nueva contraseña"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,11 +77,12 @@
 
     <Button
         android:id="@+id/btnRestablecerContra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#9F673AB7"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/boton_morado"
+        app:backgroundTint="@null"
         android:text="Restablecer"
-        android:textColor="#F3EFEF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -39,12 +39,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="218dp"
-        android:layout_height="271dp"
+    <ImageButton
+        android:id="@+id/btnperfil"
+        android:layout_width="195dp"
+        android:layout_height="193dp"
+        android:background="@drawable/avatar1"
         android:gravity="center_horizontal"
-        android:text="Juan"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,35 +53,82 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.217" />
 
-    <Button
-        android:id="@+id/btnColeccionables"
-        android:layout_width="171dp"
-        android:layout_height="192dp"
-        android:layout_marginBottom="96dp"
-        android:gravity="center_horizontal"
-        android:text="Coleccionables"
-        android:textStyle="bold"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="158dp"
+        android:layout_height="177dp"
+        android:layout_weight="1"
+        android:background="@color/Azul"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754">
 
-    <Button
-        android:id="@+id/btnMedallas"
-        android:layout_width="171dp"
-        android:layout_height="192dp"
-        android:layout_marginBottom="96dp"
-        android:gravity="center_horizontal"
-        android:text="Medallas"
-        android:textStyle="bold"
+        <ImageButton
+            android:id="@+id/btnColeccionables"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/diamante"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Morado"
+            android:gravity="center"
+            android:text="@string/title_perfil"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="146dp"
+        android:layout_height="179dp"
+        android:layout_weight="1"
+        android:background="@color/Amarillo"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754">
+
+        <ImageButton
+            android:id="@+id/btnMedallas"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/medallas"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMedallas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Medallas"
+            android:background="@color/Dorado"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/btnConfiguracion"
@@ -94,4 +141,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.064" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

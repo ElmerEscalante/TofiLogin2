@@ -34,7 +34,7 @@ class NuevaContraActivity : AppCompatActivity() {
             //if(contra.isNullOrEmpty() == contraRepit.isNullOrEmpty()){
                // Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
             //}else{
-                startActivity(Intent(this, LoginActivity::class.java))
+                startActivity(Intent(this, PerfilesActivity::class.java))
             //}
         }
     }

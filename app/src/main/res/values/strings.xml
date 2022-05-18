@@ -26,8 +26,10 @@
 
     <string name="usuario">Usuario</string>
     <string name="password">Contraseña</string>
-    <string name="prompt_user">User</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_user">Nombre</string>
+    <string name="prompt_email">Correo electronico</string>
+    <string name="prompt_password">Repetir contraseña</string>
     <string name="email">Correo electronico</string>
+    <string name="numero">12</string>
+    <string name="nuevaContrasena">Nueva contraseña</string>
 </resources>

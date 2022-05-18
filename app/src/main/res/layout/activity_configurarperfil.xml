@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/MoradoDegradadoRadial">
+    android:background="@drawable/morado_degradado_radial">
 
     <ImageView
         android:id="@+id/cerrar"
@@ -36,25 +36,26 @@
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="0.061"
         tools:layout_editor_absoluteX="0dp">
 
 
-        <Button
+        <ImageButton
             android:id="@+id/btnPerfil1"
-            android:layout_width="300dp"
+            android:layout_width="248dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/avatar1"
-            app:cornerRadius="20dp"/>
+            app:cornerRadius="20dp" />
 
 
     </LinearLayout>
@@ -72,7 +73,6 @@
         android:hint="@string/prompt_user"
         android:inputType="textPersonName"
         android:selectAllOnFocus="true"
-        android:text="Nombre"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,6 +97,34 @@
         app:layout_constraintVertical_bias="0.077">
     </TextView>
 
+    <ImageButton
+        android:id="@+id/btnMas"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/mas"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnMenos"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:background="@drawable/menos"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78"
+        tools:ignore="MissingConstraints" />
+
     <EditText
         android:id="@+id/et_edad"
         android:layout_width="63dp"
@@ -107,10 +135,9 @@
         android:background="@android:drawable/editbox_background"
         android:backgroundTint="#E0E6E8"
         android:backgroundTintMode="add"
-        android:hint="@string/prompt_user"
-        android:inputType="textPersonName"
+        android:hint="@string/numero"
+        android:inputType="number"
         android:selectAllOnFocus="true"
-        android:text="12"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,15 +149,17 @@
 
     <Button
         android:id="@+id/btnSiguiente"
-        android:layout_width="161dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#9F673AB7"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/boton_morado"
+        app:backgroundTint="@null"
         android:text="Siguiente"
-        android:textColor="#F3EFEF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.919" />
+        app:layout_constraintVertical_bias="0.922" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

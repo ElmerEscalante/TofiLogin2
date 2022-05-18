@@ -5,10 +5,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import escalante.elmer.tofologin.ActivityConfiguracion
 import escalante.elmer.tofologin.R
 import escalante.elmer.tofologin.databinding.FragmentPerfilBinding
 
@@ -32,6 +34,12 @@ class PerfilFragment : Fragment() {
 
         _binding = FragmentPerfilBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val boton: ImageButton = root.findViewById(R.id.btnConfiguracion)
+        boton.setOnClickListener{
+            val intent: Intent = Intent(context, ActivityConfiguracion::class.java)
+            context?.startActivity(intent)
+        }
 
         return root
     }

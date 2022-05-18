@@ -47,52 +47,123 @@
             tools:ignore="ImageContrastCheck" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnPerfil1"
-        android:layout_width="163dp"
-        android:layout_height="225dp"
-        android:background="@drawable/avatar1"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="352dp"
+        android:text="Elmer"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.212"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil1"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carla"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil2"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+    <ImageButton
         android:id="@+id/btnPerfil2"
-        android:layout_width="166dp"
-        android:layout_height="227dp"
+        android:layout_width="172dp"
+        android:layout_height="202dp"
         android:background="@drawable/avatar2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.202" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/btnPerfil1"
+        android:layout_width="170dp"
+        android:layout_height="203dp"
+        android:background="@drawable/avatar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="174dp"
+        android:layout_height="201dp"
+        android:layout_weight="1"
+        android:background="@color/MoradoDegradadoRadial"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732">
+
+        <ImageButton
+            android:id="@+id/btnPerfil4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/agregar"
+            android:backgroundTint="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="96dp"
+        android:text="Agregar perfil"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
+
+    <ImageButton
         android:id="@+id/btnPerfil3"
-        android:layout_width="165dp"
-        android:layout_height="227dp"
+        android:layout_width="170dp"
+        android:layout_height="205dp"
         android:background="@drawable/avatar3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintVertical_bias="0.737" />
 
-    <Button
-        android:id="@+id/btnPerfil4"
-        android:layout_width="163dp"
-        android:layout_height="226dp"
-        android:background="@drawable/avatar4"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="96dp"
+        android:text="Juan"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPerfil3"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
