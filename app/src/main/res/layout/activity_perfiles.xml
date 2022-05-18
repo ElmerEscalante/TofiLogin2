@@ -54,7 +54,7 @@
         android:layout_marginBottom="352dp"
         android:text="Elmer"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.212"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="Carla"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.782"
@@ -79,8 +79,8 @@
 
     <ImageButton
         android:id="@+id/btnPerfil2"
-        android:layout_width="172dp"
-        android:layout_height="202dp"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
         android:background="@drawable/avatar2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,8 +91,8 @@
 
     <ImageButton
         android:id="@+id/btnPerfil1"
-        android:layout_width="170dp"
-        android:layout_height="203dp"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
         android:background="@drawable/avatar1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,10 +103,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="174dp"
-        android:layout_height="201dp"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
         android:layout_weight="1"
-        android:background="@color/MoradoDegradadoRadial"
+        android:background="@drawable/boton_morado"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,17 +133,17 @@
         android:layout_marginBottom="96dp"
         android:text="Agregar perfil"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <ImageButton
         android:id="@+id/btnPerfil3"
-        android:layout_width="170dp"
-        android:layout_height="205dp"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
         android:background="@drawable/avatar3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -159,7 +159,7 @@
         android:layout_marginBottom="96dp"
         android:text="Juan"
         android:textColor="@color/black"
-        android:textSize="30dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.235"

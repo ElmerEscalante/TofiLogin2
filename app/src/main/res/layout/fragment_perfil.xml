@@ -39,26 +39,51 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btnperfil"
-        android:layout_width="195dp"
-        android:layout_height="193dp"
-        android:background="@drawable/avatar1"
-        android:gravity="center_horizontal"
-        android:textStyle="bold"
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="200dp"
+        android:layout_height="240dp"
+        android:layout_weight="1"
+        android:background="@drawable/relleno_degradado_lineal_azul"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.241">
+
+        <ImageButton
+            android:id="@+id/btnperfil"
+            android:layout_width="200dp"
+            android:layout_height="193dp"
+            android:background="@drawable/avatar1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.217" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relleno_inferior_azul"
+            android:gravity="center"
+            android:text="Elmer"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="158dp"
-        android:layout_height="177dp"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
         android:layout_weight="1"
-        android:background="@color/Azul"
+        android:background="@drawable/relleno_degradado_lineal_azul"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +107,7 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/Morado"
+            android:background="@drawable/relleno_inferior_azul"
             android:gravity="center"
             android:text="@string/title_perfil"
             android:textColor="@color/white"
@@ -93,10 +118,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="146dp"
-        android:layout_height="179dp"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
         android:layout_weight="1"
-        android:background="@color/Amarillo"
+        android:background="@drawable/relleno_degradado_lineal_amarillo"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +147,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Medallas"
-            android:background="@color/Dorado"
+            android:background="@drawable/relleno_inferior_amarillo"
             android:textColor="@color/white"
             android:textSize="26sp"
             android:textStyle="bold" />

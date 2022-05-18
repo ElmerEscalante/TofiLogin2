@@ -29,27 +29,170 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/title_dashboard"
-                android:textColor="@color/black_700"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 tools:ignore="TextContrastCheck" />
 
             <SearchView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Buscar historia, autores, caricaturas, etc." />
 
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnFantasia"
-        android:layout_width="315dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="112dp"
-        android:text="Fantasia"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:text="Por categorías"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:background="@drawable/fantasia" />
+
+            <Button
+                android:id="@+id/fantasia"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:background="@drawable/relleno_degradado_lineal"
+                android:text="Fantasía"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/misterio" />
+
+            <Button
+                android:id="@+id/cambiarperfil"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/relleno_degradado_lineal"
+                android:text="Misterio"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ciencia"/>
+
+            <Button
+                android:id="@+id/ayuda"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/relleno_degradado_lineal"
+                android:text="Ciencie ficción"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/animales" />
+
+            <Button
+                android:id="@+id/animales"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/relleno_degradado_lineal"
+                android:text="Animales"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+
+                android:layout_marginTop="15dp"
+                android:background="@drawable/aventuras" />
+
+            <Button
+                android:id="@+id/aventuras"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/relleno_degradado_lineal"
+                android:text="Aventuras"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

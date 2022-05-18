@@ -32,4 +32,5 @@
     <string name="email">Correo electronico</string>
     <string name="numero">12</string>
     <string name="nuevaContrasena">Nueva contraseña</string>
+    <string name="configuraperfil">Configura tu perfil</string>
 </resources>

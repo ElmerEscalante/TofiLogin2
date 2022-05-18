@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("login", "signInWithEmail:failure", task.exception)
-                            Toast.makeText(baseContext, "Authentication failed.",
+                            Toast.makeText(baseContext, "Usuario o contraseña invalida.",
                                 Toast.LENGTH_SHORT).show()
                             //updateUI(null)
                         }

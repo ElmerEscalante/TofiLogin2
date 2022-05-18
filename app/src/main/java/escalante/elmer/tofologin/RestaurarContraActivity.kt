@@ -33,7 +33,14 @@ class RestaurarContraActivity : AppCompatActivity() {
             if(correo.isNullOrEmpty()){
                 Toast.makeText(this, "Favor de llenar el campo", Toast.LENGTH_SHORT).show()
             }else{
-                startActivity(Intent(this, NuevaContraActivity::class.java))
+                auth.sendPasswordResetEmail(correo).addOnCompleteListener{ task ->
+                    if(task.isSuccessful){
+                        Toast.makeText(this, "Se envio un correo", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this, NuevaContraActivity::class.java))
+                    }else{
+                        Toast.makeText(this, "Ocurrio un error inesperado", Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
         }
     }
