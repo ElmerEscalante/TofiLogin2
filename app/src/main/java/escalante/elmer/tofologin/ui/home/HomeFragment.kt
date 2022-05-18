@@ -1,12 +1,17 @@
 package escalante.elmer.tofologin.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import escalante.elmer.tofologin.ActivityConfiguracion
+import escalante.elmer.tofologin.PrincipitoActivity
+import escalante.elmer.tofologin.R
 import escalante.elmer.tofologin.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -27,6 +32,12 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val boton: ImageButton = root.findViewById(R.id.btnPrincipito)
+        boton.setOnClickListener{
+            val intent: Intent = Intent(context, PrincipitoActivity::class.java)
+            context?.startActivity(intent)
+        }
 
         return root
     }
