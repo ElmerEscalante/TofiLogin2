@@ -57,6 +57,10 @@
             android:name=".PreguntasActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".PrincipitoActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

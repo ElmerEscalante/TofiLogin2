@@ -10,10 +10,13 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class RegistroActivity: AppCompatActivity(){
     private lateinit var auth: FirebaseAuth
+    val database = Firebase.database
+    val myRef = database.getReference("usuarios")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarse)
@@ -50,6 +53,14 @@ class RegistroActivity: AppCompatActivity(){
                                 // Sign in success, update UI with the signed-in user's information
                                 //Log.d(TAG, "createUserWithEmail:success")
                                 Toast.makeText(baseContext, "Registro exitoso", Toast.LENGTH_SHORT).show()
+
+
+                                val usuarios = auth.currentUser
+
+                                myRef.child(usuarios?.uid.toString()).child("Usuario").setValue(usuario)
+                                myRef.child(usuarios?.uid.toString()).child("Correo").setValue(correo)
+                                myRef.child(usuarios?.uid.toString()).child("Contraseña").setValue(contra1)
+
                                 startActivity(Intent(this, ConfiguracionPerfilActivity::class.java))
                             } else {
                                 // If sign in fails, display a message to the user.
